@@ -347,7 +347,7 @@ const Home: NextPage = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13340.486348539613!2d106.62850876849616!3d-6.2439984871598355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd88298e6403%3A0x1368d5a06dedf955!2sPT.ASEKUL%20%2F%20Asa%20Karya%20Sentral%20Elektro%20Jasa%20Servis%20AC%20Dan%20Toko%20AC!5e0!3m2!1sid!2sid!4v1647225788742!5m2!1sid!2sid"
                 width="600"
                 height="320"
-                allowFullScreen=""
+                allowFullScreen={false}
                 loading="lazy"
               ></iframe>
             </div>
