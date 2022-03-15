@@ -1,10 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 import {
   TiHeartFullOutline,
   TiStarFullOutline,
   TiChartLine,
+  TiLocation,
+  TiPhone,
+  TiMail,
+  TiSocialInstagram,
+  TiSocialFacebook,
+  TiSocialLinkedin,
 } from "react-icons/ti";
 
 const Home: NextPage = () => {
@@ -289,8 +296,8 @@ const Home: NextPage = () => {
           sekali. Hubungi segera ASEKUL Layanan jasa service AC yang sudah
           berpengalaman dan profesional.
         </p>
-        <div className="flex gap-4 mt-8 ">
-          <div className="flex flex-col w-full max-w-sm bg-white border-[1px] border-slate-200 p-4 rounded-2xl shadow-md items-center">
+        <div className="flex flex-col gap-4 mt-8 md:flex-row">
+          <div className="flex flex-col w-full md:max-w-sm bg-white border-[1px] border-slate-200 p-4 rounded-2xl shadow-md items-center">
             <h3 className="font-bold">Kontak Kami</h3>
             <div className="flex flex-col w-full gap-4 mt-4 text-sm">
               <input
@@ -321,7 +328,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col gap-4 mt-8 text-center md:flex-row">
               <div className="flex flex-col items-center w-full gap-4">
                 <div>
-                  <TiHeartFullOutline className="w-8 h-8 text-blue-900"></TiHeartFullOutline>
+                  <TiLocation className="w-8 h-8 text-blue-900"></TiLocation>
                 </div>
                 <p className="text-sm text-slate-700">
                   Jl. Kelapa Gading Selatan BLok AK 1, No.20 Pakulonan,
@@ -330,20 +337,21 @@ const Home: NextPage = () => {
               </div>
               <div className="flex flex-col items-center w-full gap-4">
                 <div>
-                  <TiChartLine className="w-8 h-8 text-blue-900"></TiChartLine>
+                  <TiPhone className="w-8 h-8 text-blue-900"></TiPhone>
                 </div>
                 <p className="text-sm text-slate-700">0811 9512 686</p>
               </div>
               <div className="flex flex-col items-center w-full gap-4">
                 <div>
-                  <TiStarFullOutline className="w-8 h-8 text-blue-900"></TiStarFullOutline>
+                  <TiMail className="w-8 h-8 text-blue-900"></TiMail>
                 </div>
                 <p className="text-sm text-slate-700">cs@asekul.com</p>
               </div>
             </div>
             {/* iframe map */}
-            <div className="my-8">
+            <div className="relative my-8 pt-[56.25%]">
               <iframe
+                className="absolute inset-0 w-full h-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13340.486348539613!2d106.62850876849616!3d-6.2439984871598355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fd88298e6403%3A0x1368d5a06dedf955!2sPT.ASEKUL%20%2F%20Asa%20Karya%20Sentral%20Elektro%20Jasa%20Servis%20AC%20Dan%20Toko%20AC!5e0!3m2!1sid!2sid!4v1647225788742!5m2!1sid!2sid"
                 width="600"
                 height="320"
@@ -352,9 +360,15 @@ const Home: NextPage = () => {
               ></iframe>
             </div>
             <div className="flex gap-4">
-              <TiHeartFullOutline className="w-8 h-8 text-blue-900"></TiHeartFullOutline>
-              <TiHeartFullOutline className="w-8 h-8 text-blue-900"></TiHeartFullOutline>
-              <TiHeartFullOutline className="w-8 h-8 text-blue-900"></TiHeartFullOutline>
+              <Link href="https://www.instagram.com/asakaryasentral/">
+                <TiSocialInstagram className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialInstagram>
+              </Link>
+              <Link href="https://www.instagram.com/asakaryasentral/">
+                <TiSocialFacebook className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialFacebook>
+              </Link>
+              <Link href="https://www.instagram.com/asakaryasentral/">
+                <TiSocialLinkedin className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialLinkedin>
+              </Link>
             </div>
           </div>
         </div>
