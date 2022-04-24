@@ -45,10 +45,18 @@ const Home: NextPage = () => {
           <nav className="container max-w-2xl p-4 mx-auto">
             <div className="items-center justify-center md:flex">
               <div className="flex items-center justify-around w-full text-slate-300">
-                <a>Beranda</a>
-                <a>Layanan</a>
-                <a>Galeri</a>
-                <a>Kontak</a>
+                <Link href="#home">
+                  <a>Beranda</a>
+                </Link>
+                <Link href="#services">
+                  <a>Layanan</a>
+                </Link>
+                <Link href="#galery">
+                  <a>Galeri</a>
+                </Link>
+                <Link href="#contact">
+                  <a>Kontak</a>
+                </Link>
               </div>
             </div>
           </nav>
@@ -62,18 +70,16 @@ const Home: NextPage = () => {
               Semua bisa anda percayakan pada kami!
             </p>
             <div className="flex flex-col gap-4 mt-8 text-center">
-              <a
-                href="services"
-                className="block px-6 py-3 text-white bg-blue-600 rounded-full"
-              >
-                Layanan Kami
-              </a>
-              <a
-                href="services"
-                className="block px-6 py-3 text-blue-600 bg-white rounded-full"
-              >
-                Testimoni
-              </a>
+              <Link href="#services">
+                <a className="block px-6 py-3 text-white bg-blue-600 rounded-full">
+                  Layanan Kami
+                </a>
+              </Link>
+              <Link href="#testimony">
+                <a className="block px-6 py-3 text-blue-600 bg-white rounded-full">
+                  Testimoni
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -123,7 +129,10 @@ const Home: NextPage = () => {
       </div>
       <div className="bg-blue-900">
         <div className="flex flex-col items-center justify-center max-w-screen-lg px-4 py-20 mx-auto text-center">
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight text-center text-white">
+          <h2
+            id="services"
+            className="mt-4 text-3xl font-extrabold leading-tight text-center text-white"
+          >
             Layanan Kami
           </h2>
           <p className="mt-2 text-white">
@@ -142,97 +151,133 @@ const Home: NextPage = () => {
                   <h3 className="font-bold">Rp65.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Cuci AC 1,5 - 2 PK</p>
+                  <h3 className="font-bold">Rp75.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Cuci AC CASSETE 2 – 3 PK</p>
+                  <h3 className="font-bold">Rp250.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Cuci AC CASSETE &gt; 3 PK</p>
+                  <h3 className="font-bold">Rp350.000</h3>
                 </div>
               </div>
+              <p className="mt-8 text-sm text-slate-500">
+                Pembersihan unit indoor dan outdoor AC, membersihkan saluran
+                pipa drain dan filter udara serta memeriksa suhu AC.
+              </p>
               <div className="flex flex-col gap-4 mt-8 text-center">
-                <a
-                  href="services"
-                  className="block px-6 py-3 text-white bg-blue-600 rounded-full"
-                >
-                  Pesan Sekarang
-                </a>
+                <Link href="https://api.whatsapp.com/send?phone=628119512686&text=Halo%20ASEKUL%20%7C%20asekul.id.%20Saya%20ingin%20menggunakan%20jasa%20Cuci%20AC">
+                  <a className="block px-6 py-3 text-white bg-blue-600 rounded-full">
+                    Pesan Sekarang
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col w-full bg-white border-[1px] border-slate-200 p-4 rounded-2xl shadow-md items-center">
-              <h3 className="font-bold">Cuci</h3>
+              <h3 className="font-bold">Bongkar/Pasang</h3>
               <p className="text-slate-700">Mulai Dari</p>
               <p className="my-4 text-3xl font-extrabold text-blue-900">
-                Rp65.000
+                Rp150.000
               </p>
               <div className="flex flex-col gap-4 text-sm">
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">
+                    Bongkar AC Split 0,5 - 1,5 PK
+                  </p>
+                  <h3 className="font-bold">Rp150.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Pasang AC Split 0,5 - 1,5 PK</p>
+                  <h3 className="font-bold">Rp250.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Bongkar AC Split 2 - 2,5 PK</p>
+                  <h3 className="font-bold">Rp250.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Pasang AC Split 2 - 2,5 PK</p>
+                  <h3 className="font-bold">Rp450.000</h3>
                 </div>
               </div>
               <div className="flex flex-col gap-4 mt-8 text-center">
-                <a
-                  href="services"
-                  className="block px-6 py-3 text-white bg-blue-600 rounded-full"
-                >
-                  Pesan Sekarang
-                </a>
+                <Link href="https://api.whatsapp.com/send?phone=628119512686&text=Halo%20ASEKUL%20%7C%20asekul.id.%20Saya%20ingin%20menggunakan%20jasa%20Bongkar/Pasang%20AC">
+                  <a className="block px-6 py-3 text-white bg-blue-600 rounded-full">
+                    Pesan Sekarang
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col w-full bg-white border-[1px] border-slate-200 p-4 rounded-2xl shadow-md items-center">
-              <h3 className="font-bold">Cuci</h3>
+              <h3 className="font-bold">Perbaikan</h3>
               <p className="text-slate-700">Mulai Dari</p>
               <p className="my-4 text-3xl font-extrabold text-blue-900">
-                Rp65.000
+                Rp200.000
               </p>
               <div className="flex flex-col gap-4 text-sm">
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">
+                    Penambahan Freon R32/410 0,5 – 1 PK
+                  </p>
+                  <h3 className="font-bold">Rp200.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Isi Freon R32/410 0,5 – 1 PK</p>
+                  <h3 className="font-bold">Rp350.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">
+                    Penambahan Freon R32/410 1,5 – 2 PK
+                  </p>
+                  <h3 className="font-bold">Rp250.000</h3>
                 </div>
                 <div>
-                  <p className="text-slate-700">Cuci AC 0,5 - 1 PK</p>
-                  <h3 className="font-bold">Rp65.000</h3>
+                  <p className="text-slate-700">Isi Freon R32/410 1,5 – 2 PK</p>
+                  <h3 className="font-bold">Rp450.000</h3>
+                </div>
+                <div>
+                  <p className="text-slate-700">
+                    Pergantian Capasitor, spart part & Jasa 0,5 – 1 PK
+                  </p>
+                  <h3 className="font-bold">Rp350.000</h3>
+                </div>
+                <div>
+                  <p className="text-slate-700">
+                    Pergantian Capasitor, spart part & Jasa 1,5 – 2 PK
+                  </p>
+                  <h3 className="font-bold">Rp450.000</h3>
+                </div>
+                <div>
+                  <p className="text-slate-700">
+                    Pergantian Capasitor fan Outdoor, spart part & Jasa 0,5 – 1
+                    PK
+                  </p>
+                  <h3 className="font-bold">Rp250.000</h3>
+                </div>
+                <div>
+                  <p className="text-slate-700">
+                    Pergantian Capasitor fan indor, spart part & Jasa 1,5 – 2 PK
+                  </p>
+                  <h3 className="font-bold">Rp300.000</h3>
+                </div>
+                <div>
+                  <p className="text-slate-700">Service Besar/Overhaul</p>
+                  <h3 className="font-bold">Rp400.000</h3>
                 </div>
               </div>
               <div className="flex flex-col gap-4 mt-8 text-center">
-                <a
-                  href="services"
-                  className="block px-6 py-3 text-white bg-blue-600 rounded-full"
-                >
-                  Pesan Sekarang
-                </a>
+                <Link href="https://api.whatsapp.com/send?phone=628119512686&text=Halo%20ASEKUL%20%7C%20asekul.id.%20Saya%20ingin%20menggunakan%20jasa%20Perbaikan%20AC">
+                  <a className="block px-6 py-3 text-white bg-blue-600 rounded-full">
+                    Pesan Sekarang
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center max-w-screen-lg px-4 py-20 mx-auto text-center">
+      <div className="flex flex-col items-center justify-center hidden max-w-screen-lg px-4 py-20 mx-auto text-center">
         <h2 className="mt-4 text-3xl font-extrabold leading-tight text-center text-slate-900">
           Client Kami
         </h2>
@@ -267,8 +312,11 @@ const Home: NextPage = () => {
           Hubungi Kami
         </a>
       </div>
-      <div className="flex flex-col items-center justify-center max-w-screen-lg px-4 py-20 mx-auto text-center">
-        <h2 className="mt-4 text-3xl font-extrabold leading-tight text-center text-slate-900">
+      <div className="flex flex-col items-center justify-center hidden max-w-screen-lg px-4 py-20 mx-auto text-center">
+        <h2
+          id="testimony"
+          className="mt-4 text-3xl font-extrabold leading-tight text-center text-slate-900"
+        >
           Testimonial
         </h2>
         <div className="flex flex-col items-center w-full gap-4 my-8">
@@ -324,7 +372,7 @@ const Home: NextPage = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col w-full">
+          <div id="contact" className="flex flex-col w-full">
             <div className="flex flex-col gap-4 mt-8 text-center md:flex-row">
               <div className="flex flex-col items-center w-full gap-4">
                 <div>
@@ -345,7 +393,7 @@ const Home: NextPage = () => {
                 <div>
                   <TiMail className="w-8 h-8 text-blue-900"></TiMail>
                 </div>
-                <p className="text-sm text-slate-700">cs@asekul.com</p>
+                <p className="text-sm text-slate-700">cs@asekul.id</p>
               </div>
             </div>
             {/* iframe map */}
@@ -360,13 +408,16 @@ const Home: NextPage = () => {
               ></iframe>
             </div>
             <div className="flex gap-4">
-              <Link href="https://www.instagram.com/asakaryasentral/">
+              <Link href="https://www.instagram.com/asakaryasentral/" passHref>
                 <TiSocialInstagram className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialInstagram>
               </Link>
-              <Link href="https://www.instagram.com/asakaryasentral/">
+              <Link href="https://www.facebook.com/asakaryasentral/" passHref>
                 <TiSocialFacebook className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialFacebook>
               </Link>
-              <Link href="https://www.instagram.com/asakaryasentral/">
+              <Link
+                href="https://www.linkedin.com/company/pt-asa-karya-multipratama"
+                passHref
+              >
                 <TiSocialLinkedin className="w-8 h-8 text-blue-900 cursor-pointer"></TiSocialLinkedin>
               </Link>
             </div>
