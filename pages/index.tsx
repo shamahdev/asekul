@@ -34,6 +34,7 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
       <div className="relative h-auto overflow-hidden">
